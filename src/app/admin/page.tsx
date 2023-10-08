@@ -10,6 +10,7 @@ import {
 import { HiMiniUser } from "react-icons/hi2";
 import { BiLogOut } from "react-icons/bi";
 import React, { useState, useEffect } from "react";
+import ContentSection from "./Home/page";
 
 const MotherDashboard = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -43,7 +44,7 @@ const MotherDashboard = () => {
           <span className="pl-2 text-black font-bold">NurtureMoms</span>
         </div>
         <div className="flex items-center pr-4">
-          <span className="pr-5 text-black font-bold">User Doctor </span>
+          <span className="pr-5 text-black font-bold">User Admin </span>
           <img
             src="/assets/avatar.jpg"
             className="rounded-full h-12 w-12"
@@ -148,6 +149,7 @@ const MotherDashboard = () => {
           className="p-2.5 mt-3 flex items-center rounded-md px-4 duration-300 cursor-pointer hover:bg-yellow-300 text-black"
         ></div>
       </div>
+      <ContentSection />
     </body>
   );
 };
